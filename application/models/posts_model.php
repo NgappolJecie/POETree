@@ -32,17 +32,4 @@
 			$this->db->delete('posts');
 			return true;
 		}
-
-		public function update_post(){
-			$Shared_by = url_title($this->input->post('Shared_by'));
-
-			$data = array(
-				'title' => $this->input->post('title'),
-				'Shared_by' => $Shared_by,
-				'body' => $this->input->post('body')
-				);
-
-			$this->db->where('id', $this->input->post('id'));
-			return $this->db->update('posts', $data);
-		}
 	}

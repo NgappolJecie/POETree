@@ -45,23 +45,4 @@
 			$this->posts_model->delete_post($id);
 			redirect('posts');
 		}
-
-		public function edit($Shared_by){
-			$data['post'] = $this->posts_model->get_posts($Shared_by);
-
-			if(empty($data['post'])){
-				show_404();
-			}
-
-			$data['title'] = 'Edit Entry';
-
-			$this->load->view('templates/header');
-			$this->load->view('posts/edit', $data);
-			$this->load->view('templates/footer');
-		}
-
-		public function update(){
-			$this->posts_model->update_post();
-			redirect('posts');
-		}
 	}

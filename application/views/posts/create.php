@@ -9,7 +9,7 @@
   </div>
   <div class="form-group">
     <label>Distributor</label>
-    <input type="text" class="form-control" name="Shared_by" placeholder="Add Name">
+    <input type="text" class="form-control" name="Shared_by" placeholder= "Add Name">
    </div>
   <div class="form-group">
     <label>Body</label>
